@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -55,19 +56,19 @@
             <h2>Become A Travel Pro In <br> One Easy Lesson</h2>
             <div class="card__row">
                 <div class="card__item">
-                    <img src="img/card-1.jpg" alt="">
+                    <img data-src="img/card-1.jpg" alt="" class="lazyload">
                     <span>Vacation Home <br> Rental Success</span>
                 </div>
                 <div class="card__item">
-                    <img src="img/card-2.jpg" alt="">
+                    <img data-src="img/card-2.jpg" alt="" class="lazyload">
                     <span>Vacation Home <br> Rental Success</span>
                 </div>
                 <div class="card__item">
-                    <img src="img/card-3.jpg" alt="">
+                    <img data-src="img/card-3.jpg" alt="" class="lazyload">
                     <span>Vacation Home <br> Rental Success</span>
                 </div>
                 <div class="card__item">
-                    <img src="img/card-4.jpg" alt="">
+                    <img data-src="img/card-4.jpg" alt="" class="lazyload">
                     <span>Vacation Home <br> Rental Success</span>
                 </div>
             </div>
@@ -87,28 +88,28 @@
                     <h2 class="white">Featured <br> Stories</h2>
                     <div class="stories__items">
                         <div class="stories__item">
-                            <img src="img/stories-1.png" alt="">
+                            <img data-src="img/stories-1.png" alt="" class="lazyload">
                             <div class="stories__item-text">
                                 <h4>Do A Sporting Stag Do In <br> Birmingham</h4>
                                 <span>13 Dec 2019</span>
                             </div>
                         </div>
                         <div class="stories__item">
-                            <img src="img/stories-2.png" alt="">
+                            <img data-src="img/stories-2.png" alt="" class="lazyload">
                             <div class="stories__item-text">
                                 <h4>From Wetlands To Canals And <br> Dams Amsterdam Is Alive</h4>
                                 <span>13 Dec 2019</span>
                             </div>
                         </div>
                         <div class="stories__item">
-                            <img src="img/stories-3.png" alt="">
+                            <img data-src="img/stories-3.png" alt="" class="lazyload">
                             <div class="stories__item-text">
                                 <h4>Stu Unger Rise And Fall Of A Poker <br> Genius</h4>
                                 <span>13 Dec 2019</span>
                             </div>
                         </div>
                         <div class="stories__item">
-                            <img src="img/stories-4.png" alt="">
+                            <img data-src="img/stories-4.png" alt="" class="lazyload">
                             <div class="stories__item-text">
                                 <h4>New Ideas For A Low Cost Vacation <br> On Water</h4>
                                 <span>13 Dec 2019</span>
@@ -156,48 +157,48 @@
             <p class="sub-title">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce <br> Canyon National Park ranks as three of the most magnificent & awe inspiring.</p>
             <div class="grid__container">
                 <div class="grid__item">
-                    <img src="img/grid-1.png" alt="">
+                    <img data-src="img/grid-1.png" alt="" class="lazyload">
                     <div class="grid__item-info">
                         <span>DESTINATIONS</span>
                         <h3>A Guide To Rocky Mountain Vacations</h3>
                     </div>
                 </div>
                 <div class="grid__item">
-                    <img src="img/grid-2.png" alt="">
+                    <img data-src="img/grid-2.png" alt="" class="lazyload">
                     <div class="grid__item-info">
                         <span>DESTINATIONS</span>
                         <h3>Traveling To Barcelona</h3>
                     </div>
                 </div>
                 <div class="grid__item">
-                    <img src="img/grid-3.png" alt="">
+                    <img data-src="img/grid-3.png" alt="" class="lazyload">
                     <div class="grid__item-info">
                         <span>DESTINATIONS</span>
                         <h3>Party Jokes Startling But Unnecessary</h3>
                     </div>
                 </div>
                 <div class="grid__item">
-                    <img src="img/grid-4.png" alt="">
+                    <img data-src="img/grid-4.png" alt="" class="lazyload">
                     <div class="grid__item-info">
                         <h3>Maui By Air The Best Way Around The Island</h3>
                     </div>
                 </div>
                 <div class="grid__item other">
-                    <img src="img/grid-5.png" alt="">
+                    <img data-src="img/grid-5.png" alt="" class="lazyload">
                     <div class="grid__item-info">
                         <span>Andre Gide</span>
                         <h3>Man cannot discover new oceans unless he has the courage to lose sight of the shore.</h3>
                     </div>
                 </div>
                 <div class="grid__item">
-                    <img src="img/grid-6.png" alt="">
+                    <img data-src="img/grid-6.png" alt="" class="lazyload">
                     <div class="grid__item-info">
                         <span>DESTINATIONS</span>
                         <h3>Traveling To Barcelona</h3>
                     </div>
                 </div>
                 <div class="grid__item">
-                    <img src="img/grid-7.png" alt="">
+                    <img data-src="img/grid-7.png" alt="" class="lazyload">
                     <div class="grid__item-info">
                         <h3>A Guide To Rocky Mountain Vacations</h3>
                     </div>
@@ -249,6 +250,7 @@
         </div><!-- container -->
     </div><!-- footer -->
 
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
